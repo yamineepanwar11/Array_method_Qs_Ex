@@ -8,4 +8,4 @@ while(num>0){
     count=count+1;
     num=parseInt(num/10)
 }
-console.log(ans)
+console.log(ans);
