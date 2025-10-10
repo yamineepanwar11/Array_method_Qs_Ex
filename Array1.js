@@ -27,6 +27,10 @@ for (let i = 0; i < arr.length - 1; i++) {
   }
 }
 
+
+
+
+
 let reversed = [];
 for (let i = arr.length - 1; i >= 0; i--) {
   reversed.push(arr[i]);

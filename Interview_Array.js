@@ -17,6 +17,8 @@
 
 
 
+
+
 // 2: Find the sum of all elements in an array.
 // let arr=[1,2,3,4];
 // let sum=0;
@@ -94,23 +96,23 @@
 
 
 // 8: Count the number of positive/negative/zero value.
-let arr = [10, -5, 0, 8, -3, 0, 12, -7];
-let positive = 0;
-let negative = 0;
-let zero= 0;
+// let arr = [10, -5, 0, 8, -3, 0, 12, -7];
+// let positive = 0;
+// let negative = 0;
+// let zero= 0;
 
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > 0) {
-        positive++;
-    } else if (arr[i] < 0) {
-        negative++;
-    } else {
-        zero++;
-    }
-}
-console.log("Positive numbers:", positive);
-console.log("Negative numbers:", negative);
-console.log("Zeroes:", zero);
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 0) {
+//         positive++;
+//     } else if (arr[i] < 0) {
+//         negative++;
+//     } else {
+//         zero++;
+//     }
+// }
+// console.log("Positive numbers:", positive);
+// console.log("Negative numbers:", negative);
+// console.log("Zeroes:", zero);
 
 
 
@@ -120,7 +122,7 @@ console.log("Zeroes:", zero);
 //     for(let j=i+1;j<arr.length;j++){
 //         if(arr[i]===arr[j]){
 //           arr.splice(j,1)
-//           j--
+//           j--;
 //         }
 //     }
 // }
@@ -188,3 +190,19 @@ console.log("Zeroes:", zero);
 
 // console.log("Largest:", largest);
 // console.log("Second Largest:", sec_largest);
+
+
+
+//14:Find missing number in an array of 1 to n.
+let arr = [1, 2, 3, 5, 8,15]; 
+let n = 15; 
+let missing = [];
+
+for (let i = 1; i <= n; i++) {
+    if (!arr.includes(i)) {
+        missing.push(i);
+    }
+}
+
+console.log("Missing numbers are:", missing);
+
