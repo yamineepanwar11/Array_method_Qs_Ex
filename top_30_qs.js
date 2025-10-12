@@ -32,15 +32,15 @@
 
 
 //3: Find the sum of digits of a number.
-let num = 23;
+// let num = 23;
 
-let result = Math.floor(num / 2) * 2;
+// let result = Math.floor(num / 2) * 2;
 
-if (result === num) {
-    console.log(num + " is Even");
-} else {
-    console.log(num + " is Odd");
-}
+// if (result === num) {
+//     console.log(num + " is Even");
+// } else {
+//     console.log(num + " is Odd");
+// }
 
 
 // let num = 15;
@@ -50,3 +50,63 @@ if (result === num) {
 // } else {
 //     console.log(num + " is Even");
 // }
+
+
+//4.Find the sum of digits of a number.
+let num=123;
+let sum=0;
+while(num>0){
+    let rem=num%10;
+    sum=sum+rem;
+    num=parseInt(num/10);
+}
+console.log(sum);
+
+
+
+//5. Check if a number is an Armstrong number.
+let n=153;
+let sum1=0;
+let temp=n;
+while(n>0){
+    let rem1=n%10;
+    sum1=sum1+rem1*rem1*rem1;
+    n=parseInt(n/10);
+}
+console.log(sum1)
+if(sum1==temp){
+    console.log("armstrong");
+}else{
+    console.log("Not a armstrong");
+}
+
+
+//6.Generate the Fibonacci sequence up to n terms.
+var a=0;
+var b=1;
+console.log(a)
+console.log(b)
+for(let i=0;i<=8;i++){
+  let c=a+b;
+    console.log(c)
+    a=b;
+    b=c;
+}
+
+
+//Check if a number is a Perfect number.
+// let num = 28; 
+// let sum = 0;
+
+// for(let i = 1; i < num; i++) {  
+//     if(num % i === 0) {         
+//         sum += i;
+//     }
+// }
+
+// if(sum === num) {
+//     console.log(num + " is a Perfect number");
+// } else {
+//     console.log(num + " is not a Perfect number");
+// }
+
